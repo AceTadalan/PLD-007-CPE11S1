@@ -10,14 +10,4 @@ int main () {
 	i=i+1;
 	}
 	 return 0;
-
-/*	
-	int i;
-	int j = 10 ;
-	for (i = 0; i <=j; i++)
-	{	cout << "hi " << i << endl;}
-	
-	return 0;
-	*/
-
 }
