@@ -5,8 +5,8 @@ int main () {
 	// create c++ program that applies calculator function
 	
 char c;
-	int a = 0;
-	int b = 0;
+	float a = 0;
+	float b = 0;
 	
 	
 	cout << "Enter first value: ";
