@@ -1,0 +1,59 @@
+#include <iostream>
+#include <string>   // For using std::string
+#include <cstdlib>  // For std::atoi
+
+int main() {
+    // Declare four strings to hold the input
+    std::string str1, str2, str3, str4;
+
+    // Prompt the user to enter four strings that represent integers
+    std::cout << "Enter four integers as strings:\n";
+    std::cout << "String 1: ";
+    std::cin >> str1;
+    std::cout << "String 2: ";
+    std::cin >> str2;
+    std::cout << "String 3: ";
+    std::cin >> str3;
+    std::cout << "String 4: ";
+    std::cin >> str4;
+
+    // Convert the strings to integers using std::atoi
+    int num1 = std::atoi(str1.c_str());
+    int num2 = std::atoi(str2.c_str());
+    int num3 = std::atoi(str3.c_str());
+    int num4 = std::atoi(str4.c_str());
+
+    // Calculate the sum
+    int sum = num1 + num2 + num3 + num4;
+
+    // Output the total sum
+    std::cout << "The sum of the integers is: " << sum << std::endl;
+
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <ctype.h>
+
+int main() {
+    char c;
+
+    printf("Enter a character: ");
+    scanf(" %c", &c);
+
+    printf("\nCharacter Information:\n");
+    printf("Character: %c\n", c);
+    printf("Properties:\n");
+    printf("  Digit: %s\n", isdigit(c) ? "Yes" : "No");
+    printf("  Alpha: %s\n", isalpha(c) ? "Yes" : "No");
+    printf("  Lowercase: %s\n", islower(c) ? "Yes" : "No");
+    printf("  Uppercase: %s\n", isupper(c) ? "Yes" : "No");
+    printf("  Space: %s\n", isspace(c) ? "Yes" : "No");
+
+    printf("\nConversions:\n");
+    printf("  Lowercase: %c\n", tolower(c));
+    printf("  Uppercase: %c\n", toupper(c));
+
+    return 0;
+}
