@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+// Function to check if 'number' is a multiple of 'x'
+bool multiple(int number, int x) {
+    return (number % x == 0);
+}
+
+int main() {
+    int number, x;
+
+    // Input the number and the divisor (x)
+    cout << "Enter a number: ";
+    cin >> number;
+    cout << "Enter the multiple to check (x): ";
+    cin >> x;
+
+    // Check if the number is a multiple of x
+    if (multiple(number, x)) {
+        cout << number << " is a multiple of " << x << "." << endl;
+    } else {
+        cout << number << " is not a multiple of " << x << "." << endl;
+    }
+
+    return 0;
+}
