@@ -1,0 +1,36 @@
+int red = 1;
+int yellow = 2;
+int green = 3; 
+int pl_red = 4;
+int pl_green = 5; 
+
+void setup() {
+  // put your setup code here, to run once:
+pinMode(red, OUTPUT);
+pinMode(yellow, OUTPUT);
+pinMode(green, OUTPUT);
+pinMode(pl_red, OUTPUT);
+pinMode(pl_green, OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+digitalWrite(red, HIGH);
+digitalWrite(yellow, LOW);
+digitalWrite(green, LOW);
+digitalWrite(pl_red, LOW);
+digitalWrite(pl_green, HIGH);
+delay(600);
+digitalWrite(red,LOW);
+digitalWrite(yellow, LOW);
+digitalWrite(green, HIGH);
+digitalWrite(pl_red, HIGH);
+digitalWrite(pl_green, LOW);
+delay(600);
+digitalWrite(red, LOW);
+digitalWrite(yellow, HIGH);
+digitalWrite(green, LOW);
+digitalWrite(pl_red, HIGH);
+digitalWrite(pl_green, LOW);
+delay(400);
+}
