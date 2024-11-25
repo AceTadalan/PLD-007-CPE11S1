@@ -1,1 +1,27 @@
+int main() {
+    double amount, rate;
+    char choice;
 
+    // User choice
+    cout << "Enter 'D' to convert Dollars to Pesos or 'P' to convert Pesos to Dollars: ";
+    cin >> choice;
+
+    // Get the conversion rate from the user
+    cout << "Enter the conversion rate (1 USD to PHP): ";
+    cin >> rate;
+
+    // Convert based on user choice
+    if (choice == 'D' || choice == 'd') {
+        cout << "Enter amount in Dollars: ";
+        cin >> amount;
+        cout << "Amount in Pesos: " << dollarsToPesos(amount, rate) << " PHP" << endl;
+    } else if (choice == 'P' || choice == 'p') {
+        cout << "Enter amount in Pesos: ";
+        cin >> amount;
+        cout << "Amount in Dollars: " << pesosToDollars(amount, rate) << " USD" << endl;
+    } else {
+        cout << "Invalid choice! Please enter 'D' or 'P'." << endl;
+    }
+
+    return 0;
+}
