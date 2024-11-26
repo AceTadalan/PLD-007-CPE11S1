@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int hypotenuse (double a, double b) {
+    return sqrt (a*a+b*b);
+}
+
+int main () {
+    int sideA, sideB;
+    cout << "Enter two value for sides: ";
+    cin >> sideA >> sideB;  
+    cout << "The hypotenuse is: " << hypotenuse (sideA, sideB) << endl;
+    
+    return 0;
+    
+}
